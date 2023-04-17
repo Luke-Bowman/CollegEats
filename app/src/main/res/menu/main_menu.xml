@@ -14,8 +14,14 @@
         android:visible="true" />
     <item
         android:id="@+id/menu_recipes"
-        android:title="Recipe Explorer" />
+        android:title="@string/menu_recipes" />
     <item
-        android:id="@+id/menu_myRecipes"
-        android:title="My Recipes" />
+        android:id="@+id/menu_myrecipes"
+        android:title="@string/menu_myrecipes" />
+    <item
+        android:id="@+id/menu_grocerylist"
+        android:title="@string/menu_grocerylist" />
+    <item
+        android:id="@+id/menu_login"
+        android:title="@string/menu_login" />
 </menu>
