@@ -14,4 +14,5 @@ public class MainActivity extends AppCompatActivity {
     //sip
     //hello luke's
     //hi cora
+    //Imported some images for our app into the project.
 }
