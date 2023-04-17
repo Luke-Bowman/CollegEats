@@ -4,47 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity = "center"
+    android:background= "@color/white"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="314dp"
-        android:layout_height="548dp"
-        app:srcCompat="@drawable/crispy_shrimp_tacos"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:id="@+id/imageView8"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/back"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="646dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="132dp"
+        android:layout_height="62dp"
+        app:srcCompat="@drawable/custom_shapes"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="564dp" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="312dp"
-        android:layout_height="77dp"
+        android:layout_width="320dp"
+        android:layout_height="292dp"
         app:srcCompat="@drawable/custom_shapes"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="399dp" />
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="147dp" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/refresh"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="477dp" />
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="458dp" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="65dp"
         android:layout_height="62dp"
         app:srcCompat="@drawable/heart"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="478dp" />
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="462dp" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/check_mark"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="476dp" />
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="458dp" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -52,6 +62,34 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/x"
         tools:layout_editor_absoluteX="289dp"
-        tools:layout_editor_absoluteY="476dp" />
+        tools:layout_editor_absoluteY="460dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Export"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="583dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="251dp"
+        android:layout_height="50dp"
+        android:text="Crispy Shrimp Tacos"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="257dp"
+        android:layout_height="406dp"
+        app:srcCompat="@drawable/crispy_shrimp_tacos"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="58dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
