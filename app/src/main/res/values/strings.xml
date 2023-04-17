@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Final Project</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_recipes">Recipe Explorer</string>
+    <string name="menu_myrecipes">My Recipes</string>
+    <string name="menu_login">Log In</string>
+    <string name="menu_grocerylist">Grocery List</string>
+
+
 </resources>
