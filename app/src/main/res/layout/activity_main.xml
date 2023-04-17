@@ -6,13 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="314dp"
+        android:layout_height="548dp"
+        app:srcCompat="@drawable/crispy_shrimp_tacos"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="312dp"
+        android:layout_height="77dp"
+        app:srcCompat="@drawable/custom_shapes"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/refresh"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="477dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="65dp"
+        android:layout_height="62dp"
+        app:srcCompat="@drawable/heart"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="478dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/check_mark"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="476dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/x"
+        tools:layout_editor_absoluteX="289dp"
+        tools:layout_editor_absoluteY="476dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
