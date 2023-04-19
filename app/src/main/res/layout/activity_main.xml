@@ -12,29 +12,32 @@
         android:id="@+id/imageView3"
         android:layout_width="320dp"
         android:layout_height="292dp"
-        app:srcCompat="@drawable/custom_shapes"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="147dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/custom_shapes" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="67dp"
         android:layout_height="68dp"
-        app:srcCompat="@drawable/refresh"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="575dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/refresh" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="65dp"
         android:layout_height="62dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView19"
         app:layout_constraintEnd_toStartOf="@+id/imageView19"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView18"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/imageView19"
         app:srcCompat="@drawable/heart" />
 
     <TextView
@@ -44,41 +47,45 @@
         android:text="Crispy Shrimp Tacos"
         android:textColor="@color/white"
         android:textSize="25dp"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="369dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.96" />
 
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="257dp"
         android:layout_height="406dp"
-        app:srcCompat="@drawable/crispy_shrimp_tacos"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="58dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.74"
+        app:srcCompat="@drawable/crispy_shrimp_tacos" />
 
     <ImageView
         android:id="@+id/imageView18"
         android:layout_width="56dp"
         android:layout_height="60dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
         app:layout_constraintEnd_toStartOf="@+id/imageView5"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
         app:srcCompat="@drawable/icons8_back_arrow_50" />
 
     <ImageView
         android:id="@+id/imageView19"
         android:layout_width="54dp"
         android:layout_height="55dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="234dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
         app:srcCompat="@drawable/icons8_upload_50__1__1_" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
