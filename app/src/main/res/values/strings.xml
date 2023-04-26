@@ -6,6 +6,9 @@
     <string name="menu_myrecipes">My Recipes</string>
     <string name="menu_login">Log In</string>
     <string name="menu_grocerylist">Grocery List</string>
+    <string name="info_alert_title">About College Eats</string>
+    <string name="info_alert_message">This app was created to help college students try new foods and make their own recipes.</string>
+
 
 
 </resources>
