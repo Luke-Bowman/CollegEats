@@ -9,14 +9,22 @@
         app:showAsAction="always" />
     <item
         android:id="@+id/menu_recipes"
-        android:title="@string/menu_recipes" />
+        android:title="@string/menu_recipes"
+        android:icon="@color/white"
+        android:visible="true"/>
     <item
         android:id="@+id/menu_myrecipes"
-        android:title="@string/menu_myrecipes" />
+        android:title="@string/menu_myrecipes"
+        android:icon="@color/white"
+        android:visible="true"/>
     <item
         android:id="@+id/menu_grocerylist"
-        android:title="@string/menu_grocerylist" />
+        android:title="@string/menu_grocerylist"
+        android:icon="@color/white"
+        android:visible="true"/>
     <item
         android:id="@+id/menu_login"
-        android:title="@string/menu_login" />
+        android:title="@string/menu_login"
+        android:icon="@color/white"
+        android:visible="true"/>
 </menu>
