@@ -3,6 +3,7 @@ package edu.psu.ist.hcdd340.finalproject;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -35,20 +36,25 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int menuId = item.getItemId();
 
-//        if (menuId == R.id.menu_reset) {
-//            ShapeableImageView image = findViewById(R.id.nopeIcon);
-//            Snackbar.make(image,
-//                    R.string.snack_bar_reset,
-//                    Snackbar.LENGTH_LONG).show();
-//            return true;
 
-         if (menuId == R.id.menu_info){
+        if (menuId == R.id.menu_info) {
             AlertDialog.Builder d = new AlertDialog.Builder(this);
             d.setTitle(R.string.info_alert_title);
             d.setMessage(R.string.info_alert_message);
             d.setPositiveButton("OK", null);
             d.show();
+
+        } else if (menuId == R.id.menu_register) {
+            Intent registerIntent = new Intent(this, RegisterActivity.class);
+            startActivity(registerIntent);
+            return true;
+        } else if (menuId == R.id.menu_login) {
+            Intent loginIntent = new Intent(this, LoginActivity.class);
+            startActivity(loginIntent);
+            return true;
         }
+
+
         return super.onOptionsItemSelected(item);
     }
 }
