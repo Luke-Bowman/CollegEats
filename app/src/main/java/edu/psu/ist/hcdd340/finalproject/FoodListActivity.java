@@ -1,6 +1,7 @@
 package edu.psu.ist.hcdd340.finalproject;
 
 import android.os.Bundle;
+import android.view.Menu;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,12 +9,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class FoodListActivity extends AppCompatActivity {
     private final FoodData[] FOOD_LIST = {
-            new FoodData("Shrimp Scampi", R.drawable.shrimp_scampi, "abingtonadmissions@psu.edu", "1-215-881-7600"),
-            new FoodData("Cheese Burger", R.drawable.burger, "altoonaadmission@psu.edu", "1-814-949-5466"),
-            new FoodData("Tacos", R.drawable.taco, "br-admissions@psu.edu", "1-724-773-3800"),
-            new FoodData("Chicken Parmesan", R.drawable.chicken_parmesan, "behrend.admissions@psu.edu", "1-814-898-6100"),
-            new FoodData("Shrimp Taco", R.drawable.crispy_shrimp_tacos, "behrend.admissions@psu.edu", "1-814-898-6100"),
-            new FoodData("Pulled Pork", R.drawable.pulled_pork, "behrend.admissions@psu.edu", "1-814-898-6100")
+            new FoodData("Shrimp Scampi", R.drawable.shrimp_scampi),
+            new FoodData("Cheese Burger", R.drawable.burger),
+            new FoodData("Tacos", R.drawable.taco),
+            new FoodData("Chicken Parmesan", R.drawable.chicken_parmesan),
+            new FoodData("Shrimp Taco", R.drawable.crispy_shrimp_tacos),
+            new FoodData("Pulled Pork", R.drawable.pulled_pork)
     };
 
     private RecyclerView mRecyclerView;
@@ -28,5 +29,10 @@ public class FoodListActivity extends AppCompatActivity {
         mAdapter = new FoodListAdapter(this, FOOD_LIST);
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
     }
 }

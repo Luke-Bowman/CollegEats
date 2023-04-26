@@ -35,8 +35,6 @@ public class FoodListAdapter extends
         FoodData food = mFoodList[position];
         holder.foodImageView.setImageResource(food.getProfileImage());
         holder.foodTitleView.setText(food.getFoodName());
-        holder.foodPhoneView.setText(food.getPhone());
-        holder.foodEmailView.setText(food.getEmail());
     }
 
     @Override
@@ -47,22 +45,16 @@ public class FoodListAdapter extends
     class FoodViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public final TextView foodTitleView;
         public final ImageView foodImageView;
-        public final TextView foodEmailView;
-        public final TextView foodPhoneView;
         final FoodListAdapter mAdapter;
 
         public FoodViewHolder(@NonNull View itemView, FoodListAdapter adapter) {
             super(itemView);
             foodTitleView = itemView.findViewById(R.id.food_list_title_id);
             foodImageView = itemView.findViewById(R.id.food_list_image_id);
-            foodEmailView = itemView.findViewById(R.id.campus_list_email);
-            foodPhoneView = itemView.findViewById(R.id.campus_list_phone);
             this.mAdapter = adapter;
 
             foodTitleView.setOnClickListener(this);
             foodImageView.setOnClickListener(this);
-            foodEmailView.setOnClickListener(this);
-            foodPhoneView.setOnClickListener(this);
         }
 
         @Override
