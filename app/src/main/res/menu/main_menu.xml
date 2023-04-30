@@ -3,8 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/menu_login"
+        android:icon="@color/white"
+        android:title="@string/menu_login"
+        android:visible="true" />
+    <item
+        android:id="@+id/menu_register"
+        android:title="@string/menu_register" />
+    <item
         android:id="@+id/menu_info"
         android:icon="@drawable/baseline_info_24"
+        android:iconTint="#FFFFFF"
         android:title="@string/menu_info"
         app:showAsAction="always" />
     <item
@@ -20,11 +29,6 @@
     <item
         android:id="@+id/menu_grocerylist"
         android:title="@string/menu_grocerylist"
-        android:icon="@color/white"
-        android:visible="true"/>
-    <item
-        android:id="@+id/menu_login"
-        android:title="@string/menu_login"
         android:icon="@color/white"
         android:visible="true"/>
 </menu>

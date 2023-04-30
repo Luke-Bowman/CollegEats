@@ -14,17 +14,17 @@ public class GroceryList extends AppCompatActivity {
     ArrayList<String> items;
     ArrayAdapter<String> adapter;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.grocery_list);
-
-        listView = findViewById(R.id.list_view);
-        items = new ArrayList<>();
-        items.add("sugar");
-
-        adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, items);
-        listView.setAdapter(adapter);
-
-    }
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.grocery_list);
+//
+//        listView = findViewById(R.id.list_view);
+//        items = new ArrayList<>();
+//        items.add("sugar");
+//
+//        adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, items);
+//        listView.setAdapter(adapter);
+//
+//    }
 }
