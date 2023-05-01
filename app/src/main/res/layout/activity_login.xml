@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/first_name_hint"
+        android:hint="@string/password_hint"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:textColorHint="#757575"

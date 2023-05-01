@@ -145,7 +145,7 @@
     <CheckBox
         android:id="@+id/checkBox6"
         android:layout_width="121dp"
-        android:layout_height="45dp"
+        android:layout_height="32dp"
         android:layout_alignStart="@+id/imageView16"
         android:layout_alignEnd="@+id/imageView16"
         android:layout_alignBottom="@+id/imageView16"
@@ -181,7 +181,7 @@
     <CheckBox
         android:id="@+id/checkBox9"
         android:layout_width="108dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_alignStart="@+id/imageView19"
         android:layout_alignEnd="@+id/imageView19"
         android:layout_alignBottom="@+id/imageView19"
