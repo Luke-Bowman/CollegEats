@@ -138,6 +138,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
             return true;
         }
+        else if (menuID == R.id.menu_recipes){
+            Intent intent = new Intent(this, FoodListActivity.class);
+            startActivity(intent);
+            return true;
+        }
+        else if (menuID == R.id.menu_myrecipes){
+            Intent intent = new Intent(this, FoodProfile.class);
+            startActivity(intent);
+            return true;
+        }
         else if  (menuID == R.id.menu_info) {
             AlertDialog.Builder d = new AlertDialog.Builder(this);
             d.setTitle(R.string.info_alert_title);

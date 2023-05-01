@@ -9,12 +9,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class FoodListActivity extends AppCompatActivity {
     private final FoodData[] FOOD_LIST = {
-            new FoodData("Shrimp Scampi", R.drawable.shrimp_scampi),
-            new FoodData("Cheese Burger", R.drawable.burger),
-            new FoodData("Tacos", R.drawable.taco),
-            new FoodData("Chicken Parmesan", R.drawable.chicken_parmesan),
-            new FoodData("Shrimp Taco", R.drawable.crispy_shrimp_tacos),
-            new FoodData("Pulled Pork", R.drawable.pulled_pork)
+            new FoodData("Shrimp Scampi", R.drawable.resized_shrimp_scampi),
+            new FoodData("Cheese Burger", R.drawable.resized_burger),
+            new FoodData("Tacos", R.drawable.resized_tacos),
+            new FoodData("Chicken Parmesan", R.drawable.resized_chicken_parm),
+            new FoodData("Shrimp Taco", R.drawable.resized_shrimp_tacos),
+            new FoodData("Pulled Pork", R.drawable.resized_pulled_pork)
     };
 
     private RecyclerView mRecyclerView;
