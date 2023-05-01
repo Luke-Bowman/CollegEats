@@ -24,6 +24,7 @@
         android:id="@+id/refreshIcon"
         android:layout_width="67dp"
         android:layout_height="68dp"
+        android:contentDescription="@string/refresh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
@@ -37,9 +38,12 @@
         android:layout_width="65dp"
         android:layout_height="62dp"
         android:layout_marginEnd="68dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/like"
+        app:layout_constraintBottom_toBottomOf="@+id/backIcon"
+        app:layout_constraintEnd_toEndOf="@+id/refreshIcon"
         app:layout_constraintEnd_toStartOf="@+id/exportIcon"
-        app:layout_constraintTop_toBottomOf="@+id/foodName"
+        app:layout_constraintStart_toStartOf="@+id/refreshIcon"
+        app:layout_constraintTop_toTopOf="@+id/backIcon"
         app:layout_constraintVertical_bias="0.494"
         app:srcCompat="@drawable/heart" />
 
@@ -47,16 +51,20 @@
         android:id="@+id/foodName"
         android:layout_width="251dp"
         android:layout_height="50dp"
-        android:text="Crispy Shrimp Tacos"
+        android:text="@string/crispy_shrimp_tacos"
         android:textColor="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="@+id/foodPicture"
-        app:layout_constraintTop_toBottomOf="@+id/foodPicture" />
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodPicture"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/backIcon"
         android:layout_width="56dp"
         android:layout_height="60dp"
+        android:contentDescription="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/likeIcon"
         app:layout_constraintHorizontal_bias="0.34"
@@ -70,9 +78,10 @@
         android:layout_width="54dp"
         android:layout_height="55dp"
         android:layout_marginEnd="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/export"
+        app:layout_constraintBottom_toBottomOf="@+id/likeIcon"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foodName"
+        app:layout_constraintTop_toTopOf="@+id/likeIcon"
         app:srcCompat="@drawable/icons8_upload_50__1__1_" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

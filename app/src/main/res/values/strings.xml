@@ -27,6 +27,11 @@
     <string name="login_error_message">Please retry using correct email and password.</string>
     <string name="last_name_label">Last Name:</string>
     <string name="first_name_label">First Name:</string>
+    <string name="crispy_shrimp_tacos">Crispy Shrimp Tacos</string>
+    <string name="refresh">refresh</string>
+    <string name="like">like</string>
+    <string name="back">back</string>
+    <string name="export">export</string>
 
 
 </resources>

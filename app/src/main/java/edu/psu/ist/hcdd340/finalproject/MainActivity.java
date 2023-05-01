@@ -32,8 +32,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     };
 
     private static final FoodProfile[] FOOD_PROFILES = {
-            new FoodProfile("Crispy Tacos", R.drawable.crispy_shrimp_tacos),
-            //new FoodProfile("")
+            new FoodProfile("Shrimp Tacos", R.drawable.resized_shrimp_tacos),
+            new FoodProfile("Cheese Burger", R.drawable.resized_burger),
+            new FoodProfile("Tacos", R.drawable.resized_tacos),
+            new FoodProfile("Chicken Parmesan", R.drawable.resized_chicken_parm),
+            new FoodProfile("Pulled Pork", R.drawable.resized_pulled_pork),
+            new FoodProfile("Shrimp Scampi", R.drawable.resized_shrimp_scampi)
+
     };
 
     private static int index = 0;
@@ -58,10 +63,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Handle onClick events
          */
         int id = view.getId();
+
         if (id == R.id.refreshIcon) {
             updateFoodProfile(moveToNextProfile());
-        } else if (id == R.id.backIcon)
+        }
+         else if (id == R.id.backIcon) {
             updateFoodProfile(moveToPreviousProfile());
+        }
+        else if (id == R.id.likeIcon){
+           updateFoodProfile(moveToNextProfile());
+        }
         else
             Log.d(TAG, "Unknown ID: " + id);
     }
