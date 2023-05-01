@@ -73,8 +73,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else if (id == R.id.likeIcon){
            updateFoodProfile(moveToNextProfile());
         }
-        else
-            Log.d(TAG, "Unknown ID: " + id);
+        else if (id == R.id.exportIcon){
+
+        }
+
     }
 
     /**
