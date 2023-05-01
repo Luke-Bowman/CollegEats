@@ -3,6 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:ignore="ExtraText">
     android:shape = "square">
-    <solid android:color="@color/rust"/>
+    <solid android:color="@color/eggshell_white"/>
     <corners android:radius="0px"/>
 </shape>
