@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.imageview.ShapeableImageView;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final FoodProfile[] FOOD_PROFILES = {
             new FoodProfile("Crispy Tacos", R.drawable.crispy_shrimp_tacos),
-
+            //new FoodProfile("")
     };
 
     private static int index = 0;
@@ -127,10 +128,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onOptionsItemSelected (MenuItem item) {
         int menuID = item.getItemId();
 
-        if (menuID == R.id.menu_recipes) {
-            Intent intent = new Intent(this, FoodProfile.class);
+        if (menuID == R.id.menu_login) {
+            Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
             return true;
+        }
+        else if (menuID == R.id.menu_register) {
+            Intent intent = new Intent(this, RegisterActivity.class);
+            startActivity(intent);
+            return true;
+        }
+        else if  (menuID == R.id.menu_info) {
+            AlertDialog.Builder d = new AlertDialog.Builder(this);
+            d.setTitle(R.string.info_alert_title);
+            d.setMessage(R.string.info_alert_message);
+            d.setPositiveButton(android.R.string.ok, null);
+            d.show();
         }
         return super.onOptionsItemSelected(item);
     }
