@@ -8,83 +8,71 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/foodPicture"
         android:layout_width="320dp"
         android:layout_height="292dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25"
-        app:srcCompat="@drawable/custom_shapes" />
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/crispy_shrimp_tacos" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/refreshIcon"
         android:layout_width="67dp"
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/likeIcon"
-        app:layout_constraintStart_toStartOf="@+id/likeIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/likeIcon"
+        app:layout_constraintVertical_bias="0.609"
         app:srcCompat="@drawable/refresh" />
 
     <ImageView
         android:id="@+id/likeIcon"
         android:layout_width="65dp"
         android:layout_height="62dp"
-        app:layout_constraintBottom_toBottomOf="@+id/exportIcon"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/exportIcon"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/backIcon"
-        app:layout_constraintTop_toTopOf="@+id/exportIcon"
+        app:layout_constraintTop_toBottomOf="@+id/foodName"
+        app:layout_constraintVertical_bias="0.494"
         app:srcCompat="@drawable/heart" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/foodName"
         android:layout_width="251dp"
         android:layout_height="50dp"
         android:text="Crispy Shrimp Tacos"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.96" />
-
-    <ImageView
-        android:id="@+id/labelFood"
-        android:layout_width="257dp"
-        android:layout_height="406dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.74"
-        app:srcCompat="@drawable/crispy_shrimp_tacos" />
+        app:layout_constraintStart_toStartOf="@+id/foodPicture"
+        app:layout_constraintTop_toBottomOf="@+id/foodPicture" />
 
     <ImageView
         android:id="@+id/backIcon"
         android:layout_width="56dp"
         android:layout_height="60dp"
-        app:layout_constraintBottom_toBottomOf="@+id/likeIcon"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/likeIcon"
-        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/likeIcon"
+        app:layout_constraintTop_toBottomOf="@+id/foodName"
+        app:layout_constraintVertical_bias="0.49"
         app:srcCompat="@drawable/icons8_back_arrow_50" />
 
     <ImageView
         android:id="@+id/exportIcon"
         android:layout_width="54dp"
         android:layout_height="55dp"
+        android:layout_marginEnd="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/likeIcon"
-        app:layout_constraintTop_toBottomOf="@+id/labelFood"
-        app:layout_constraintVertical_bias="0.26999998"
+        app:layout_constraintTop_toBottomOf="@+id/foodName"
         app:srcCompat="@drawable/icons8_upload_50__1__1_" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
