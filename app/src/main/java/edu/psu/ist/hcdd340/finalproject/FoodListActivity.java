@@ -26,7 +26,7 @@ public class FoodListActivity extends AppCompatActivity implements View.OnClickL
 
     private RecyclerView mRecyclerView;
     private FoodListAdapter mAdapter;
-    private SharedPreferences sharedPreferences;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +38,9 @@ public class FoodListActivity extends AppCompatActivity implements View.OnClickL
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        Button recipeButton = findViewById(R.id.food_recipe_button);
+        recipeButton.setOnClickListener(this);
 
-        sharedPreferences = getSharedPreferences(RegisterActivity.SHARED_PREF_NAME, MODE_PRIVATE);
     }
     @Override
     public void onClick(View view){
