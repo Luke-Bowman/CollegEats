@@ -26,6 +26,9 @@
             android:name=".GroceryList"
             android:exported="false" />
         <activity
+            android:name=".CustomList"
+            android:exported="true" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
