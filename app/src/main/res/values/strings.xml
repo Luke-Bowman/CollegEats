@@ -28,6 +28,7 @@
     <string name="last_name_label">Last Name:</string>
     <string name="first_name_label">First Name:</string>
     <string name="crispy_shrimp_tacos">Crispy Shrimp Tacos</string>
+    <string name="chicken_parm">Chicken Parmesan</string>
     <string name="refresh">refresh</string>
     <string name="like">like</string>
     <string name="back">back</string>
@@ -39,6 +40,26 @@
     
     <string name="ingredients">Ingredients:</string>
     <string name="preparations">Preparations:</string>
-
+    <string name="ingredient_list_chicken_parm">
+        <b> 4 Boneless Chicken Breasts </b>
+        <b> 3 Eggs </b>
+        <b> 2-TBS Flour </b>
+        <b> 2-Cups Breadcrumbs </b>
+        <b> 1-Cup Shredded Parmesan Cheese </b>
+        <b> Kosher Salt </b>
+        <b> Black Pepper </b>
+        <b> ¼-Cup Extra Virgin Olive Oil </b>
+        <b> Fresh Mozzarella Cheese Sliced </b>
+        <b> 1-lb Spaghetti noodles </b>
+        <b> 1-Jar Galassi Pasta Sauce </b></string>
+    <string name="prep_chicken_parm">Slice chicken breast on the diagonal. Pound chicken breast to ¼” thick. Season with salt
+and pepper. Slightly beat the 3 eggs in a shallow dish. Mix flour, breadcrumbs and
+parmesan cheese together in a large bowl. Prepare spaghetti according to directions,
+drain and place back into pot over low heat and add Galassi Pasta Sauce and stir till
+noodles are coated well and sauce is to temp. Heat olive oil to medium heat in a skillet.
+Dredge chicken pieces in eggs, then coat in dry mixture. Fry chicken in olive oil until
+bottom side is golden brown. Turn Chicken over add sliced mozzarella to top of chicken
+continue to fry till other side is golden brown. Remove chicken. </string>
+    <string name="ingrediant_list">ingrediant_list</string>
 
 </resources>

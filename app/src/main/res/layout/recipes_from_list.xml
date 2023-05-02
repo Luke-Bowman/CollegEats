@@ -9,20 +9,20 @@
         android:id="@+id/food_picture"
         android:layout_width="197dp"
         android:layout_height="175dp"
-        android:contentDescription="ingrediant_list"
+        android:contentDescription="@string/ingrediant_list"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.050000012"
         tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/chicken_parmesan" />
 
     <TextView
         android:id="@+id/food_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/chicken_parm"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +47,7 @@
             android:id="@+id/ingredients_for_cooking"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="@string/ingredient_list_chicken_parm" />
 
         <TextView
             android:id="@+id/prep"
@@ -60,7 +60,7 @@
             android:id="@+id/steps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="@string/prep_chicken_parm" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
