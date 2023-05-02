@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,7 +39,8 @@ public class FoodListActivity extends AppCompatActivity implements View.OnClickL
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        Button recipeButton = findViewById(R.id.food_recipe_button);
+        View myLayout = LayoutInflater.from(this).inflate(R.layout.food_list_item,null);
+        Button recipeButton = myLayout.findViewById(R.id.food_recipe_button);
         recipeButton.setOnClickListener(this);
 
     }
