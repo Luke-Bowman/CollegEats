@@ -70,9 +70,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          else if (id == R.id.backIcon) {
             updateFoodProfile(moveToPreviousProfile());
         }
-        else if (id == R.id.likeIcon){
-           updateFoodProfile(moveToNextProfile());
-        }
         else if (id == R.id.exportIcon){
 
         }
@@ -154,17 +151,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return true;
         }
         else if (menuID == R.id.menu_recipes){
-            Intent intent = new Intent(this, FoodListActivity.class);
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
             return true;
         }
         else if (menuID == R.id.menu_myrecipes){
-            Intent intent = new Intent(this, FoodProfile.class);
+            Intent intent = new Intent(this, FoodListActivity.class);
             startActivity(intent);
             return true;
         }
         else if (menuID == R.id.menu_grocerylist) {
             Intent intent = new Intent(this, GroceryList.class);
+            startActivity(intent);
+            return true;
+        }
+        else if (menuID == R.id.menu_customlist) {
+            Intent intent = new Intent(this, CustomList.class);
             startActivity(intent);
             return true;
         }

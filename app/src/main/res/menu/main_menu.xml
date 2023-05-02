@@ -31,4 +31,7 @@
         android:title="@string/menu_grocerylist"
         android:icon="@color/white"
         android:visible="true"/>
+    <item
+        android:id="@+id/menu_customlist"
+        android:title="Custom List" />
 </menu>
