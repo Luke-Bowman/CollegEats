@@ -50,6 +50,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             Snackbar.make(button,
                     "Logged In!",
                     Snackbar.LENGTH_LONG).show();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         } else {
             AlertDialog.Builder d = new AlertDialog.Builder(this);
             d.setTitle(R.string.login_error_title);
@@ -97,6 +99,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             startActivity(intent);
             return true;
         }
+
         else if  (menuId == R.id.menu_info) {
             AlertDialog.Builder d = new AlertDialog.Builder(this);
             d.setTitle(R.string.info_alert_title);
