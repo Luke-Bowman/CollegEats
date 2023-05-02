@@ -103,31 +103,40 @@ public class CustomList extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int menuId = item.getItemId();
+    public boolean onOptionsItemSelected (MenuItem item) {
+        int menuID = item.getItemId();
 
-        if (menuId == R.id.menu_login) {
+        if (menuID == R.id.menu_login) {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
             return true;
         }
-        else if (menuId == R.id.menu_register) {
+        else if (menuID == R.id.menu_register) {
             Intent intent = new Intent(this, RegisterActivity.class);
             startActivity(intent);
             return true;
         }
-        else if (menuId == R.id.menu_recipes){
+        else if (menuID == R.id.menu_recipes){
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            return true;
+        }
+        else if (menuID == R.id.menu_myrecipes){
             Intent intent = new Intent(this, FoodListActivity.class);
             startActivity(intent);
             return true;
         }
-        else if (menuId == R.id.menu_myrecipes){
-            Intent intent = new Intent(this, FoodProfile.class);
+        else if (menuID == R.id.menu_grocerylist) {
+            Intent intent = new Intent(this, GroceryList.class);
             startActivity(intent);
             return true;
         }
-
-        else if  (menuId == R.id.menu_info) {
+        else if (menuID == R.id.menu_customlist) {
+            Intent intent = new Intent(this, CustomList.class);
+            startActivity(intent);
+            return true;
+        }
+        else if  (menuID == R.id.menu_info) {
             AlertDialog.Builder d = new AlertDialog.Builder(this);
             d.setTitle(R.string.info_alert_title);
             d.setMessage(R.string.info_alert_message);
